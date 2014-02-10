@@ -5,9 +5,23 @@ html
     meta name="keywords" content="template language"
     meta name="author" content="Juan Lulkin & Elad Maimon"
     == css :application
+    javascript:
+      (function() {
+          var path = '//easy.myfonts.net/v2/js?sid=199442(font-family=Gibson+SemiBold)&sid=199443(font-family=Gibson)&sid=199448(font-family=Gibson+Light)&key=uo53YzGqbH',
+              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+              trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = protocol + path;
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+</script>    
   body
     ul#board
       - 10.times do
         li.numeric-widget
-          h2 Widget title
+          /h2 Widget title
+          h2.g Widget title
+          
           h1 1.234,56

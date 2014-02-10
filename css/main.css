@@ -15,7 +15,6 @@ ul#board {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  /*border: 1px solid red;*/
   padding: 0; }
   ul#board:before, ul#board:after {
     content: " ";
@@ -27,10 +26,9 @@ ul#board {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    padding: 20px;
-    margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.3);
-    /*box-shadow: 0 0 2px rgba(0,0,0,0.1);*/ }
+    margin-bottom: 20px;
+    padding: 20px; }
     ul#board li:last-child {
       margin-right: 0; }
     ul#board li:nth-child(4n) {
@@ -38,17 +36,16 @@ ul#board {
     ul#board li:nth-child(4n+1) {
       clear: left; }
     ul#board li h2 {
-      padding: 0;
+      color: rgba(0, 0, 40, 0.4);
+      font-size: 12.5px;
       margin: 0;
-      font-size: 13px;
-      color: rgba(0, 0, 40, 0.5);
-      /*font-weight: normal;*/
+      padding: 0;
       text-transform: uppercase;
-      font-family: "Montserrat", "Helvetica Neue";
-      letter-spacing: 1px; }
+      font-family: 'Gibson Light', "Montserrat", "Helvetica Neue"; }
     ul#board li.numeric-widget h1 {
       font-family: "Helvetica Neue";
-      padding: 0;
-      margin: 10px 0;
       font-weight: 100;
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin: 10px 0;
+      padding: 0;
+      color: rgba(0, 0, 50, 0.6); }
