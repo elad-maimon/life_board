@@ -4,8 +4,10 @@ html
     title Slim Examples
     meta name="keywords" content="template language"
     meta name="author" content="Juan Lulkin & Elad Maimon"
-    javascript:
-      alert('Slim supports embedded javascript!')
-
+    == css :application
   body
-    h1 Markup examples
+    ul#board
+      - 10.times do
+        li.numeric-widget
+          h2 Widget title
+          h1 1.234,56

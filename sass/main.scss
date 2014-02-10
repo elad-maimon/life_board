@@ -1,0 +1,52 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  padding: 0;
+}
+
+ul#board{
+  @include outer-container;
+  /*border: 1px solid red;*/
+  padding: 0;
+  li{
+    @include span-columns(3);
+    @include omega(4n);
+
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.3);
+    /*box-shadow: 0 0 2px rgba(0,0,0,0.1);*/
+    h2{
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      color: rgba(0,0,40,0.5);
+      /*font-weight: normal;*/
+      text-transform: uppercase;
+      font-family: "Montserrat", "Helvetica Neue";
+      letter-spacing: 1px;
+    }
+
+    &.numeric-widget{
+      h1{
+        font-family: "Helvetica Neue";
+        padding: 0;
+        margin: 10px 0;
+        font-weight: 100;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
